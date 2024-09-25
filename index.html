@@ -9,30 +9,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="container relative mx-auto p-6">
+<body class="md:mx-40" >
+    <nav class="container relative mx-auto p-6 ">
         <div class="flex  items-center justify-between space-x-20 my-6 space-y-0">
             <!-- logo section -->
         <div class="z-30">
             <div><img src="./images/logo-bookmark.svg" alt=""></div>
         </div>
         <!-- nav content -->
-        <div class=" sm-hidden imd-flex items-center space-x-10   text-grayishBlue">
-            <a href="" class="-tracking-wider hover:text-softRed">FEATURES</a>
-            <a href="" class="-tracking-wider  hover:text-softRed">PRICING</a>
-            <a href="" class="-tracking-wider  hover:text-softRed">CONTACT</a>
+        <div class=" sm:hidden md:flex items-center space-x-10   text-grayishBlue">
+            <a href="" class="tracking-wider hover:text-softRed">FEATURES</a>
+            <a href="" class="tracking-wider  hover:text-softRed">PRICING</a>
+            <a href="" class="tracking-wider  hover:text-softRed">CONTACT</a>
             <a href="" class="px-8 py-2 text-white bg-softRed rounded-lg shawdow-md hover:text-softRed hover:bg-white ">LOGIN</a>
         </div>
-        <div  >
+        
             <button id="menu-btn" class="z-30 sm:block focus:outline-none md:hidden hamburger">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle" ></span>
                 <span class="hamburger-bottom"></span>
             </button>
-        </div>
+       
     </div>
     </nav>
+    <!-- hero section -->
+     <section id="hero">
+     <div class="container flex flex-col-reverse m-auto p-6 lg:flex-row lg:mb-0 lg:items-center justify-between">
+        <!-- content section -->
+         <div class="  w-1/2">
+        <div class="w-96"> <h1 class=" text-4xl font-sans font-semibold py-6 mx-auto">A Simple Bookmark Manager</h1></div>
+         <p class="text-lg text-grayishBlue  py-6 mx-auto">A clean and simple interface to organize your favourite websites.Open a new browser tab and see your sites load instantly.Try it for free.</p>
+         <!-- buttons section -->
+          <div class="flex  ">
+            <a href="" class="text-white rounded bg-softBlue p-4 m-0.5 font-semibold text-sm shadow-md   hover:bg-white hover:border-softBlue hover:text-gray-800">Get it on Chrome</a>
+            <a href=" " class="text-gray-800 hover:bg-softBlue rounded m-0.5 hover:text-white p-4 font-semibold text-sm shadow-md ">Get it on Firefox</a>
+          </div>
+         </div>
+         <!-- img section -->
+          <div class=" w-1/2">
+            <div><img src="./images/illustration-hero.svg" alt=""></div>
+          </div>
+     </div>
 
+    </section>
+    <section id="features">
+        <div class="mx-auto  mt-24   items-center  w-1/2  flex flex-col text-center">
+            <h1 class="text-2xl my-2 justify-center font-semibold">Features</h1>
+            <p class="text-lg text-grayishBlue  py-4 mx-auto">Our aim is to make it quick and easy for you to access your favourite websites.Your bookmarks sync between your devices so you can access them to go.</p>
+        
+        </div>
+
+    </section>
 </body>
 </html>
 
