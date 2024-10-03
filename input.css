@@ -2,3 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.extension_options {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.25rem; /* 4px */
+    margin-top: 5rem; /* 80px (default) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+
+
+  .first_block {
+    border-bottom: 4px solid transparent; /* Use transparent to avoid conflict */
+    padding-bottom: 2.5rem; /* 40px */
+    background-image: radial-gradient(circle, rgba(148, 163, 184, 0.3) 2px,  transparent 0.2px); /* Simulate dots */
+    background-size: 20px 20px; /* Adjust the spacing between dots */
+    background-position: bottom; /* Place the dots only at the bottom */
+    background-repeat: repeat-x; /* Apply only on the horizontal axis */
+  }
+
+  .btn {
+    color: #ffffff; /* text-white */
+    border-radius: 0.25rem; /* rounded */
+    background-color: #5f99f7; /* bg-softBlue */
+    padding: 1rem; /* p-4 */
+    margin: 0.75rem; /* m-3 */
+    font-weight: 600; /* font-semibold */
+    font-size: 0.875rem; /* text-sm */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .btn:hover {
+    border: 2px solid #5f99f7; /* hover:border-2 hover:border-softBlue */
+    background-color: #ffffff; /* hover:bg-white */
+    color: #5f99f7; /* hover:text-softBlue */
+  }
+  
+  

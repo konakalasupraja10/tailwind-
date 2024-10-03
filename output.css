@@ -594,6 +594,14 @@ video {
   margin: 0.125rem;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -607,6 +615,10 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-20 {
@@ -665,14 +677,6 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .bg-softBlue {
@@ -769,8 +773,62 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:border-2:hover {
-  border-width: 2px;
+.extension_options {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+  /* 4px */
+  margin-top: 5rem;
+  /* 80px (default) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.first_block {
+  border-bottom: 4px solid transparent;
+  /* Use transparent to avoid conflict */
+  padding-bottom: 2.5rem;
+  /* 40px */
+  background-image: radial-gradient(circle, rgba(148, 163, 184, 0.3) 2px,  transparent 0.2px);
+  /* Simulate dots */
+  background-size: 20px 20px;
+  /* Adjust the spacing between dots */
+  background-position: bottom;
+  /* Place the dots only at the bottom */
+  background-repeat: repeat-x;
+  /* Apply only on the horizontal axis */
+}
+
+.btn {
+  color: #ffffff;
+  /* text-white */
+  border-radius: 0.25rem;
+  /* rounded */
+  background-color: #5f99f7;
+  /* bg-softBlue */
+  padding: 1rem;
+  /* p-4 */
+  margin: 0.75rem;
+  /* m-3 */
+  font-weight: 600;
+  /* font-semibold */
+  font-size: 0.875rem;
+  /* text-sm */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* shadow-md */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+.btn:hover {
+  border: 2px solid #5f99f7;
+  /* hover:border-2 hover:border-softBlue */
+  background-color: #ffffff;
+  /* hover:bg-white */
+  color: #5f99f7;
+  /* hover:text-softBlue */
 }
 
 .hover\:border-softBlue:hover {
@@ -791,11 +849,6 @@ video {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.hover\:text-softBlue:hover {
-  --tw-text-opacity: 1;
-  color: hsl(231 69% 60% / var(--tw-text-opacity));
 }
 
 .hover\:text-softRed:hover {
@@ -847,8 +900,20 @@ video {
     margin-right: 1rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mt-40 {
+    margin-top: 10rem;
   }
 
   .lg\:flex {
@@ -863,6 +928,10 @@ video {
     width: 24rem;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -873,6 +942,16 @@ video {
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:text-start {
@@ -889,4 +968,5 @@ video {
     line-height: 1.75rem;
   }
 }
-
+  
+  
